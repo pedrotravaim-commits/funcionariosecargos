@@ -1,0 +1,18 @@
+import express from "express"
+import mongoose from "mongoose"
+const app = express()
+app.use(express.json())
+
+app.get("", (req,res) => {
+    res.end ("primeira pag")
+})
+
+mongoose.connect("mongodb://localhost:27017/bancodedados")
+    .then (()=> console.log("mongodb conectado"))
+    .catch((err)=> console.log("erro ao conectar"))
+
+
+app.listen(3333, () => {
+    console.log("servidor rodando na 3333")
+})
+
