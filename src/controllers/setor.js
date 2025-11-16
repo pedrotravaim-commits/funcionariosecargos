@@ -1,4 +1,4 @@
-import { setor } from "../models/models/setor.js"
+import { setor } from "../models/setor.js"
 
 const procurarsetor = async (req,res) =>{
     const response = await setor.find()

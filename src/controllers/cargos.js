@@ -7,7 +7,7 @@ const procurarcargos = async (req,res) =>{
 
 const adicionacargos =  async (req,res) => {
     const {descricao, hierarquia, cargo} = req.body
-    if (!descricao, !hierarquia, !cargo){
+    if (!descricao || !hierarquia || !cargo){
         return res.status(422).json({
             erro: true,
             message: "dados inválidos"

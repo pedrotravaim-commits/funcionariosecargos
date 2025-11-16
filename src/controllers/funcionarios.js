@@ -11,9 +11,9 @@ const procurarfuncionariosporid = async (req,res) =>{
         res.json(response)
     }
 
-const adicionafuncionarios = (req,res) =>{
+const adicionafuncionarios =  (req,res) =>{
     const {nome, idade} = req.body
-    if (!nome, !idade){
+    if (!nome ||!idade){
         res.status(422).json({
             erro: true,
             message: "dados inválidos"
