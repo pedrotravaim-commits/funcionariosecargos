@@ -9,4 +9,3 @@ const funcionariosSchema = new Schema({
 const funcionarios = model('funcionarios',funcionariosSchema)
 export {funcionarios}
 
-//pratos = funcionario

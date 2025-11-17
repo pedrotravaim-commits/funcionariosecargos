@@ -11,4 +11,3 @@ const cargosSchema = new Schema({
 const cargos = model('cargos', cargosSchema)
 export {cargos}
 
-//cargo = comanda

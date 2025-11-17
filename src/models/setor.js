@@ -8,4 +8,3 @@ const setorSchema = new Schema({
 const setor = model('setor',setorSchema)
 export {setor}
 
-// setor = mesas
